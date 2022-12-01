@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship</title>
+</head>
+<body>
+    <h1>Welcome to simple bank we make banking simple!</h1>
+    <section class="acc-info">
+        <div class="container">
+         <div class="info">
+            <div class="title">Account Info</div>
+            <div class="balance">
+                <span>Total Balance :<div class="bln" id="totalbalance">0</div></span> 
+          </div>
+            </div>
+         </div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Name :</span>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="select-type">
+                        <span class="ac-type">Account Type  :</span>
+                        <div class="redio-group">
+                            <span>saving</span>
+                            <input type="radio" name="ac-type" value="saving" id="a1" checked>
+                            <span>Current</span>
+                            <input type="radio" name="ac-type" value="current" id="a2">
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="transaction">
+     <div class="info">
+        <div class="title">Transaction</div>
+        <h6>select what do you want</h6>
+     </div>
+     <form action="#">
+        <div class="trans-details">
+            <div class="input-box">
+                <span class="Amount">Amount :</span>
+                <input id="amount" type="number">
+            </div>
+                <div class="transaction-btn">
+                    <input type="button" id="deposit" value="Deposit">
+                    <input type="button" id="withdraw" value="Withdraw">
+                </div>
+            </div>
+        </div>
+    </form>
+    </section>
+    <div class="viewtr">
+     <input type="button" id="view-t" value="View Transaction">
+    </div>
+    <section id="trans-dt" class="trans-detail">
+       <div class="title"> Transaction Details </div>
+        <div class="user-info">
+            <span>Name :<div class="name" id="name-d"></div></span>
+            <span>Account :<div class="name" id="account-d"></div></span>
+            <span>Initial Balance :<div class="name" id="balance"></div></span>
+        </div>
+        <table id="display">
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Balance</th>
+            </tr>
+        </table>
+    </section>
+   
+    <script src="script.js"></script>
+</body>
+</html>
